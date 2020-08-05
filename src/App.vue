@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <Header
+      v-if="questions.length && numTotal <10"
       :numCorrect="numCorrect"
       :numTotal="numTotal"
     />
