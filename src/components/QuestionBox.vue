@@ -29,7 +29,7 @@
       <b-button
         @click="next"
         variant="success"
-        href="#"
+        :disabled="selectIndex === null || !answered"
       >
         Next
       </b-button>
